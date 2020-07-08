@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+    <script src="./FontAwesome/all.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <title>Edit Profile</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-light" href="../index.html">AdminBoard</a>
+            <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-light" href="../index.html">Dashboard <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-muted" href="#">Post</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="categorie.html" class="nav-link active text-muted">Categorie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-muted" href="utilisateurs.html">Utilisateurs</a>
+                  </li>
+                </ul>
+              <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-user mr-1"></i>Bienvenue Esaie
+                  </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profile.html"><i class="fas fa-user-circle"></i>Profile</a>
+                        <a class="dropdown-item" href="parametre.html"><i class="fas fa-cog"></i>Parmetres</a>
+                      </div>
+                  </div>
+              <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-muted" href="logout.html">
+                      <i class="fas fa-user-times mr-1"></i>Logout
+                  </a>
+                  </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col text-light">
+                    <h2 class="my-2"><i class="fas fa-user-circle fa-1x mr-1"></i>Edit Profile</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  bg-light">
+        <div class="row mt-2">
+            <div class="col-12 text-center col-md-6 col-lg-6 my-2">
+                <div class="btn btn-outline-secondary text-dark"><a href="../index.html" class="text-dark"><i class="fas fa-arrow-left mr-1"></i>Back To Dashboard</a></div>
+            </div>
+            <div class="col-12 text-center col-md-3 col-lg-3 my-2">
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                    <i class="fas fa-lock mr-1"></i>Change Password
+                  </button>
+
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-primary text-dark">
+                          <h5 class="modal-title" id="staticBackdropLabel">Change Password</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <label for="text" class="text-dark text-left">Password</label>
+                            <input type="text" class="" id="text" style="width: 100%;">
+                            <label for="text" class="text-dark">Confirm Password</label>
+                            <input type="text" class="" id="text" style="width: 100%;">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save Changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 text-center col-md-3 col-lg-3 my-2">
+                <div class="btn btn-danger"><i class="fas fa-times mr-1"></i>Annuler</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-8">
+                <table class="table table-bordered mt-5">
+                    <thead>
+                      <tr class="bg-light">
+                        <th scope="col">Edit Profile</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-">
+                        <th scope="row">
+                            <p>Name</p>
+                            <input type="text" class="" id="text" style="width: 100%; margin: auto;" placeholder="Esaie">
+                        </th>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <p>Email</p>
+                          <input type="text" class="" id="text" style="width: 100%; margin: auto;" placeholder="@esaie">
+                        </th>
+                      </tr>
+                        <tr class="">
+                            <th scope="row">
+                              <p>Bio</p>
+                              <textarea name="editor1"></textarea>
+                              <script>
+                                      CKEDITOR.replace( 'editor1' );
+                              </script>
+                            </th>
+                          </tr>
+                          <tr>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-12 text-center col-md-4 col-lg-4 text-light font-weight-bold">
+              <div class="col mb-2 text-dark ml-2">
+                    <h3>Your Avatar</h3>
+              </div>
+              <div class="col mb-2 text-center text-dark ">
+                <img src="image/avatar.jpg" alt="avatar" style="width: 250px; margin: auto;">
+              </div>
+              <div class="col text-light mt-3">
+                <div class="btn btn-primary mr-3">Edit Image</div>
+                <div class="btn btn-danger">Delete Image</div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+</body>
+</html>
